@@ -515,6 +515,16 @@
       "suggestion": "rastreios, seguimentos, acompanhamentos",
       "context": "computação / engenharia / visão",
       "explanation": "Plural de rastreamento. Em pt-PT prefira 'rastreios' ou 'seguimentos'."
+    },
+    "aporte térmico": {
+      "suggestion": "energia térmica fornecida, calor introduzido, energia térmica transferida",
+      "context": "engenharia mecânica / soldadura / processos térmicos",
+      "explanation": "Em pt-PT técnico evita-se o galicismo/espanholismo 'aporte térmico' (comum em pt-BR para 'heat input'); prefira 'energia térmica fornecida', 'calor introduzido' ou 'energia térmica transferida'."
+    },
+    "aportes térmicos": {
+      "suggestion": "energias térmicas fornecidas, calores introduzidos",
+      "context": "engenharia mecânica / soldadura / processos térmicos",
+      "explanation": "Plural de aporte térmico. Em pt-PT técnico prefira 'energias térmicas fornecidas' ou 'calores introduzidos'."
     }
   },
   "consonant_rules": {
