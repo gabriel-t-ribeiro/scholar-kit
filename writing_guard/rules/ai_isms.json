@@ -914,6 +914,14 @@
     "geradas": {
       "suggestion": "criadas, produzidas, originadas",
       "explanation": "Plural feminino de gerado (calque do inglês 'generated'). Prefira 'criadas', 'produzidas' ou 'originadas'."
+    },
+    "amaciamento": {
+      "suggestion": "degradação, redução, perda",
+      "explanation": "Calque literal do inglês 'softening' (ex.: 'damage softening' ou 'stiffness softening') em textos de mecânica dos materiais e dano contínuo gerados por IA. Em pt-PT técnico e formal, especialmente aplicado à rigidez de um material, prefira 'degradação', 'redução' ou 'perda' (ex.: 'degradação/redução linear progressiva da rigidez')."
+    },
+    "amaciamentos": {
+      "suggestion": "degradações, reduções, perdas",
+      "explanation": "Plural de amaciamento (calque literal do inglês 'softening'). Em pt-PT técnico e formal, especialmente no contexto da rigidez de materiais ou dano contínuo, prefira 'degradações', 'reduções' ou 'perdas'."
     }
   }
 }
