@@ -744,20 +744,20 @@
       "explanation": "Plural feminino de caústica."
     },
     "espúria": {
-      "suggestion": "parasita, falsa, ilegítima, anómala, espúrio (calque de 'spurious')",
-      "explanation": "Tradução literal frequente do inglês 'spurious' (ex.: 'spurious correlations' -> 'correlações ilusórias/falsas', 'spurious signals' -> 'sinais parasitas/falsos', 'spurious reflections' -> 'reflexos parasitas'). Em contextos de engenharia/estatística em pt-PT, prefira 'parasita', 'falsa', 'ilusória' ou 'anómala'."
+      "suggestion": "parasita, falsa, artificial, ilegítima, anómala, ilusória",
+      "explanation": "Tradução literal frequente do inglês 'spurious' (ex.: 'spurious correlations' -> 'correlações ilusórias/falsas', 'spurious signals' -> 'sinais parasitas/falsos', 'spurious reflections' -> 'reflexos parasitas'). Em contextos de engenharia/estatística em pt-PT, prefira 'parasita', 'falsa', 'artificial', 'ilusória' ou 'anómala'."
     },
     "espúrio": {
-      "suggestion": "parasita, falso, ilegítimo, anómalo, ilusório",
-      "explanation": "Calque do inglês 'spurious' (ex.: 'ruído parasita', 'sinal parasita', 'resultado ilusório'). Em pt-PT técnico e científico, prefira 'parasita', 'falso' ou 'anómalo'."
+      "suggestion": "parasita, falso, artificial, ilegítimo, anómalo, ilusório",
+      "explanation": "Calque do inglês 'spurious' (ex.: 'ruído parasita', 'sinal parasita', 'resultado ilusório/artificial'). Em pt-PT técnico e científico, prefira 'parasita', 'falso', 'artificial' ou 'anómalo'."
     },
     "espúrias": {
-      "suggestion": "parasitas, falsas, ilegítimas, anómalas, ilusórias",
-      "explanation": "Plural feminino de espúria. Prefira 'parasitas', 'falsas' ou 'ilusórias'."
+      "suggestion": "parasitas, falsas, artificiais, ilegítimas, anómalas, ilusórias",
+      "explanation": "Plural feminino de espúria. Prefira 'parasitas', 'falsas', 'artificiais' ou 'ilusórias'."
     },
     "espúrios": {
-      "suggestion": "parasitas, falsos, ilegítimos, anómalos, ilusórios",
-      "explanation": "Plural masculino de espúrio. Prefira 'parasitas', 'falsos' ou 'anómalos'."
+      "suggestion": "parasitas, falsos, artificiais, ilegítimos, anómalos, ilusórios",
+      "explanation": "Plural masculino de espúrio. Prefira 'parasitas', 'falsos', 'artificiais' ou 'anómalos'."
     },
     "expurgar": {
       "suggestion": "eliminar, remover, filtrar, suprimir, descartar",
@@ -830,6 +830,90 @@
     "demonstrando": {
       "suggestion": "a demonstrar, ao demonstrar, o que demonstra, para demonstrar",
       "explanation": "Gerúndio frequente em decalques do inglês ('demonstrating') e pt-BR. Em pt-PT formal, evite o gerúndio e prefira 'a demonstrar', 'o que demonstra' ou 'ao demonstrar'."
+    },
+    "estacionário": {
+      "suggestion": "estático, permanente (para regimes)",
+      "explanation": "Calque frequente do inglês 'stationary' ou 'steady-state'. Em pt-PT técnico prefira 'estático' (ex.: 'problema estático', 'ponto estático') ou 'permanente' quando se refere a um regime (ex.: 'regime permanente')."
+    },
+    "estacionária": {
+      "suggestion": "estática, permanente (para regimes)",
+      "explanation": "Feminino de estacionário (calque do inglês 'stationary'). Em pt-PT técnico prefira 'estática' (ex.: 'fenda estática', 'análise estática') ou 'permanente' no caso de regimes (ex.: 'condição permanente')."
+    },
+    "estacionários": {
+      "suggestion": "estáticos, permanentes (para regimes)",
+      "explanation": "Plural masculino de estacionário (calque do inglês 'stationary'). Em pt-PT técnico prefira 'estáticos' ou 'permanentes' (quando se refere a regimes)."
+    },
+    "estacionárias": {
+      "suggestion": "estáticas, permanentes (para regimes)",
+      "explanation": "Plural feminino de estacionário (calque do inglês 'stationary'). Em pt-PT técnico prefira 'estáticas' ou 'permanentes' (para regimes)."
+    },
+    "escorregamento": {
+      "suggestion": "corte, deslizamento",
+      "explanation": "Frequentemente usado em traduções literais do inglês ('sliding' / 'slip') em mecânica estrutural. Em pt-PT de engenharia mecânica, as solicitações fundamentais são compressão, tração, corte e torção; prefira 'corte' (para solicitações/modos de fratura) ou 'deslizamento' (quando se trata de movimento relativo entre superfícies)."
+    },
+    "escorregamentos": {
+      "suggestion": "cortes, deslizamentos",
+      "explanation": "Plural de escorregamento. Em pt-PT técnico prefira 'cortes' ou 'deslizamentos' consoante o contexto."
+    },
+    "carregamento": {
+      "suggestion": "carga, tensão, força, pressão, solicitação",
+      "explanation": "Calque frequente do inglês 'loading' em textos de engenharia mecânica gerados por IA. Em pt-PT técnico prefira 'carga', 'tensão', 'força', 'pressão' ou 'solicitação' de acordo com a grandeza física em causa."
+    },
+    "carregamentos": {
+      "suggestion": "cargas, tensões, forças, pressões, solicitações",
+      "explanation": "Plural de carregamento (calque do inglês 'loadings'). Em pt-PT técnico prefira 'cargas', 'tensões', 'forças', 'pressões' ou 'solicitações' consoante o contexto."
+    },
+    "libertação": {
+      "suggestion": "libertada / libertado (reestruturar a frase)",
+      "explanation": "Nominalização pouco natural em pt-PT técnico resultante de traduções literais do inglês ('release', ex.: 'energy release rate' -> 'taxa de libertação de energia'). Prefira reestruturar a frase com 'libertada' ou 'libertado' (ex.: 'taxa a que a energia é libertada')."
+    },
+    "libertações": {
+      "suggestion": "libertadas / libertados (reestruturar a frase)",
+      "explanation": "Plural de libertação. Em pt-PT técnico prefira reestruturar a frase utilizando o particípio 'libertadas' ou 'libertados'."
+    },
+    "desfasamento": {
+      "suggestion": "deslocamento, diferença, contraste",
+      "explanation": "Termo frequentemente empregue por IA para traduzir 'offset', 'shift' ou 'mismatch' do inglês. Dependendo do contexto em pt-PT técnico, prefira 'deslocamento' (quando se refere a desvio posicional/geométrico) ou 'diferença' / 'contraste' (quando se refere a disparidade de propriedades entre materiais)."
+    },
+    "desfasamentos": {
+      "suggestion": "deslocamentos, diferenças, contrastes",
+      "explanation": "Plural de desfasamento. Consoante o contexto em pt-PT, prefira 'deslocamentos', 'diferenças' ou 'contrastes'."
+    },
+    "desacoplado": {
+      "suggestion": "separado, independente, desligado",
+      "explanation": "Calque direto do inglês 'decoupled'. Em pt-PT formal e técnico prefira 'separado', 'independente' ou 'desligado'."
+    },
+    "desacoplada": {
+      "suggestion": "separada, independente, desligada",
+      "explanation": "Feminino de desacoplado (calque do inglês 'decoupled'). Prefira 'separada', 'independente' ou 'desligada'."
+    },
+    "desacoplados": {
+      "suggestion": "separados, independentes, desligados",
+      "explanation": "Plural masculino de desacoplado (calque do inglês 'decoupled'). Prefira 'separados', 'independentes' ou 'desligados'."
+    },
+    "desacopladas": {
+      "suggestion": "separadas, independentes, desligadas",
+      "explanation": "Plural feminino de desacoplado (calque do inglês 'decoupled'). Prefira 'separadas', 'independentes' ou 'desligadas'."
+    },
+    "desacoplar": {
+      "suggestion": "separar, tornar independente, desligar",
+      "explanation": "Calque direto do inglês 'to decouple'. Em pt-PT formal e técnico prefira 'separar', 'tornar independente' ou 'desligar'."
+    },
+    "gerado": {
+      "suggestion": "criado, produzido, originado",
+      "explanation": "Frequentemente usado em excesso por IA (calque do inglês 'generated', ex.: 'modelo gerado', 'erro gerado'). Em pt-PT formal e técnico prefira 'criado', 'produzido' ou 'originado'."
+    },
+    "gerada": {
+      "suggestion": "criada, produzida, originada",
+      "explanation": "Feminino de gerado (calque do inglês 'generated', ex.: 'malha gerada'). Em pt-PT formal e técnico prefira 'criada', 'produzida' ou 'originada'."
+    },
+    "gerados": {
+      "suggestion": "criados, produzidos, originados",
+      "explanation": "Plural masculino de gerado (calque do inglês 'generated'). Prefira 'criados', 'produzidos' ou 'originados'."
+    },
+    "geradas": {
+      "suggestion": "criadas, produzidas, originadas",
+      "explanation": "Plural feminino de gerado (calque do inglês 'generated'). Prefira 'criadas', 'produzidas' ou 'originadas'."
     }
   }
 }
