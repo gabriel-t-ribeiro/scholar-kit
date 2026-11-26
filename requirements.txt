@@ -1,17 +1,24 @@
-# AI_tools: one environment for uni_vault/ and spellcheck_pt/
-# Create:  python3.12 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# scholar-kit: shared environment for writing_guard/ and uni_vault/
+# Zero-dependency core: `pip install -e .` runs writecheck with stdlib only.
+# Recommended writing setup: `python3.12 -m venv .venv && .venv/bin/pip install -e ".[writing,dev]"`
+# Full vault setup (Apple Silicon): `.venv/bin/pip install -r requirements.txt`
+
+# Writing guard optional extras (PDF parsing + exact EN CMU pronouncing dictionary)
+pypdf>=6.0
+cmudict>=1.0
 
 # Transcription (uni_vault/transcribe.py, watcher.py) — Apple Silicon only
 mlx-whisper==0.4.3
 tqdm
 
-# PDFs (enrich_note.py, make_ai_note.py, spellcheck_pt)
-pypdf==6.19.0
-
 # Plots
 matplotlib==3.11.2
 
-# Cloud transcription tests (test_cloud_transcription.py)
+# Cloud transcription tests (uni_vault/test_cloud_transcription.py)
 python-dotenv
 groq
 google-genai
+
+# Development & CI
+pytest>=8.0
+ruff>=0.6

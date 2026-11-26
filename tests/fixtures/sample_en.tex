@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+\title{Adaptive Real-Time Pump Scheduling}
+\author{Gabriel Ribeiro}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Water distribution utilities face high electricity costs when operating pumping stations under time-of-use tariffs~\cite{bras2025}.
+Day-ahead schedules optimize pumping costs, \textit{e.g.} by filling elevated reservoirs during off-peak hours.
+As shown in \autoref{fig:arch}, the architecture separates economic planning from real-time feedback.
+
+\begin{equation}
+J = \sum_{k=0}^{N-1} c_k P_k \Delta t
+\end{equation}
+
+\input{sample_chapter.tex}
+
+\section{Conclusions}
+The proposed framework reduces energy cost without violating operational constraints.
+
+\begin{thebibliography}{9}
+\bibitem{bras2025} M. Bras et al., Smart-DLS optimization, 2025.
+\end{thebibliography}
+
+\end{document}

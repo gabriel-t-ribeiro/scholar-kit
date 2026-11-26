@@ -1,16 +1,21 @@
-# Environment (rebuild with requirements.txt)
+# Environment (rebuild with pyproject.toml / requirements.txt)
 .venv/
 __pycache__/
 *.pyc
 .ruff_cache/
+.pytest_cache/
 .env
+dist/
+build/
+*.egg-info/
 
 # Link to the Obsidian vault in Google Drive
 uni_vault/vault
 
-# Large or copyrighted reference material (kept in Google Drive / locally)
-spellcheck_pt/*.pdf
+# Large or copyrighted reference material (kept locally / in Google Drive)
+writing_guard/**/*.pdf
 uni_vault/rename_undo.json
+uni_vault/rename_map.csv
 
 # Build leftovers and macOS
 texput.log

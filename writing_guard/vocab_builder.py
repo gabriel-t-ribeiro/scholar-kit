@@ -13,7 +13,6 @@ Saves a compiled gzip pickle cache (pt_PT_vocab.pkl.gz) for sub-second loading.
 import gzip
 import os
 import pickle
-import re
 import time
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -146,7 +145,7 @@ def build_vocabulary(force_rebuild=False):
             words = pickle.load(f)
         return words
 
-    print("[spellcheck_pt] Compiling European Portuguese vocabulary cache...")
+    print("[writing_guard] Compiling European Portuguese vocabulary cache...")
     t0 = time.time()
     words = set()
 
@@ -187,19 +186,19 @@ def build_vocabulary(force_rebuild=False):
                                 words.add((base_clean + add).lower())
 
     hunspell_count = len(words)
-    print(f"[spellcheck_pt] Loaded {hunspell_count} inflections from Hunspell pt_PT.")
+    print(f"[writing_guard] Loaded {hunspell_count} inflections from Hunspell pt_PT.")
 
     # 2. Load Porto Editora lemmas + morphological inflection
     if os.path.exists(PORTO_FILE):
         with open(PORTO_FILE, "r", encoding="utf-8", errors="ignore") as f:
             pe_lemmas = [line.strip().lower() for line in f if line.strip() and not line.strip().startswith("-")]
-        
+
         for lemma in pe_lemmas:
             inflect_lemma(lemma, words)
-        print(f"[spellcheck_pt] Loaded and inflected {len(pe_lemmas)} lemmas from Porto Editora.")
+        print(f"[writing_guard] Loaded and inflected {len(pe_lemmas)} lemmas from Porto Editora.")
 
-    print(f"[spellcheck_pt] Total compiled vocabulary: {len(words)} entries in {time.time() - t0:.2f}s.")
-    print(f"[spellcheck_pt] Saving cache to {CACHE_FILE}...")
+    print(f"[writing_guard] Total compiled vocabulary: {len(words)} entries in {time.time() - t0:.2f}s.")
+    print(f"[writing_guard] Saving cache to {CACHE_FILE}...")
     with gzip.open(CACHE_FILE, "wb") as f:
         pickle.dump(words, f, protocol=pickle.HIGHEST_PROTOCOL)
 

@@ -1,5 +1,0 @@
-No escopo deste projeto, o usuário precisa cadastrar os seus dados na tela principal.
-O arquivo foi salvo com sucesso após o time realizar a validação.
-A acurácia do modelo foi elevada, permitindo alavancar os resultados e customizar as saídas.
-O trem chegou a horas ao contrário do ônibus.
-Por outro lado, o engenheiro contactou a equipa e desenvolvemos uma solução robusta.

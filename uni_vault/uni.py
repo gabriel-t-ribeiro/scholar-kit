@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Main Automation Hub for the Obsidian Vault (0_uni_obsidian).
-Central CLI entrypoint for the vault scripts in AI_tools/uni_vault/
+Central CLI entrypoint for the vault scripts in scholar-kit/uni_vault/
 with on-the-fly help documentation and argument forwarding.
 """
 
@@ -10,7 +10,7 @@ import sys
 import subprocess
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-# All scripts live next to this file (AI_tools/uni_vault)
+# All scripts live next to this file (scholar-kit/uni_vault)
 UTIL_DIR = SCRIPT_DIR
 
 COMMANDS = {

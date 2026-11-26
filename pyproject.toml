@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scholar-kit"
+version = "1.0.0"
+description = "Zero-token bilingual (EN / pt-PT) scientific writing readability & ADPE style guard plus Obsidian university vault automation."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Gabriel Ribeiro" },
+]
+keywords = [
+    "readability",
+    "flesch",
+    "flesch-kincaid",
+    "academic-writing",
+    "latex",
+    "portuguese",
+    "pt-PT",
+    "obsidian",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = []
+
+[project.optional-dependencies]
+pdf = ["pypdf>=6.0"]
+en-exact = ["cmudict>=1.0"]
+writing = ["pypdf>=6.0", "cmudict>=1.0"]
+vault = [
+    "mlx-whisper",
+    "tqdm",
+    "matplotlib",
+    "python-dotenv",
+    "groq",
+    "google-genai",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[project.scripts]
+writecheck = "writing_guard.cli:main"
+scholar-kit = "writing_guard.cli:scholar_kit_main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["writing_guard*"]
+
+[tool.setuptools.package-data]
+writing_guard = [
+    "rules/*.json",
+    "dictionaries/*",
+    "whitelist.txt",
+]
+
+[tool.setuptools.exclude-package-data]
+writing_guard = [
+    "dictionaries/*.pdf",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B"]
